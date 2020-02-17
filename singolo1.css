@@ -1,6 +1,7 @@
 * {
    margin: 0; 
    padding: 0;
+   box-sizing: border-box;
 }
 body {
   font-family: Lato, sans-serif;
@@ -11,13 +12,14 @@ header {
   width: 1020px;
   height: 89px;
 
-  border: 1px solid black;
+  border: 1px solid #2d303a;
+  /* border: 1px solid black; */
   
   }
 .slider {
   margin: auto;
   width: 1020px;
-  height: 600px;
+  height: 594px;
   /* position: relative; */
   
 }
@@ -33,7 +35,7 @@ header {
   
 }
 .slider-wrapper {
-  border-bottom: 15px solid #ea676b;
+  border-bottom: 6px solid #ea676b;
   background-color: #f06c64;
 }
 .services-wrapper {
@@ -50,8 +52,8 @@ nav {
 
 .left-arrow {
   float:left;
-  margin-top: 287px;
-  margin-left:40px;
+  margin-top: 281px;
+  margin-left: 42px;
   
 }
  .right-arrow:hover {
@@ -62,23 +64,24 @@ nav {
 }
 .right-arrow {
   float:right;
-  margin-top: 287px;
+  margin-top: 281px;
   margin-right:40px;
  
 } 
 .vertical {
   margin-left: 54px;
-  margin-top: 59px;
+  margin-top: 53px;
 }
 .horizontal {
-  margin-left: 98px;
-  margin-top: 180px;
+  margin-left: 69px;
+  margin-bottom: 122px;
 
 }
 h1 {
   float:left;
-  margin-left: 40px;
+  margin-left: 30px;
   margin-top: 25px;
+  letter-spacing: 0.01px;
   
 }
 .asterisk {
@@ -98,6 +101,21 @@ ul>li {
 a {
   text-decoration: none;
 }
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #f06c64;
+}
+a:active {
+  text-decoration: none;
+}
+
 li + li ::before {
   content: '.';
   display: block;
@@ -117,4 +135,73 @@ li + li ::before {
 }
 li {
   margin-right: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 90px);
+  grid-gap: 37px 20px;
+  margin-left: 40px;
+  margin-top: 37px;
+  
+}
+h2 {
+  color: #666d89;
+  font-family: "Lato - Black", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17.86px;
+}
+
+.h1-service {
+  margin-left: 40px;
+  color: #666d89;
+  font-family: "Lato - Black", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 17.86px;
+  margin-top: 70px;
+}
+.p-service {
+  margin-left: 40px;
+  color: #767e9e;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 31px;
+ 
+}
+p {
+
+color: #767e9e;
+font-family: Lato, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 21.56px;
+
+}
+.pen, .lightbulb, .heart, .phone, .bubble, .star {
+  display: flex;
+  
+}
+.wrapper {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start
+
+}
+.service-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+
+.service-wrap {
+  display: flex;
+  flex-direction: column;
+
 }
