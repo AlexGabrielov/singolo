@@ -24,7 +24,7 @@
    box-sizing: border-box;
 }
 body {
-  font-family: Lato, sans-serif;
+  /* font-family: Lato; */
   margin:0 auto;
 }
 header {
@@ -106,10 +106,11 @@ h1 {
 }
 .asterisk {
   color: #f06c64;
-    font-size: 25px;
+  font-size: 25px; 
   font-weight: 700;
   line-height: 6.32px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
+  font-family: "Lato Bold";
 }
 ul>li {
   display: inline-block;
@@ -149,10 +150,14 @@ li + li ::before {
   
 }
 .logo {
-  /* font-size: 25px; */
-  /* font-weight: 700; */
+  font-size: 25px;
+  /* font-weight: 100; */
   /* line-height: 6.32px; */
   font-family: "Lato Bold";
+}
+.logo-a {
+  /* font-size: 44px;
+  font-family: "Lato Bold"; */
 }
 li {
   margin-right: 20px;
@@ -168,7 +173,7 @@ li {
 }
 h2 {
   color: #666d89;
-  font-family: "Lato - Black"
+  font-family: "Lato - Black";
   font-size: 18px;
   font-weight: 400;
   line-height: 17.86px;
@@ -177,7 +182,7 @@ h2 {
 .h1-service {
   margin-left: 40px;
   color: #666d89;
-  font-family: "Lato - Black"
+  font-family: "Lato - Black";
   font-size: 30px;
   font-weight: 400;
   line-height: 17.86px;
@@ -186,7 +191,7 @@ h2 {
 .p-service {
   margin-left: 40px;
   color: #767e9e;
-  font-family: Lato
+  font-family: Lato;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
@@ -196,7 +201,7 @@ h2 {
 p {
 
 color: #767e9e;
-font-family: Lato
+font-family: Lato;
 font-size: 12px;
 font-weight: 400;
 line-height: 21.56px;
@@ -225,4 +230,9 @@ line-height: 21.56px;
   display: flex;
   flex-direction: column;
 
+}
+nav a {
+  font-family: "Lato Bold";
+  /* font-weight: bold; */
+  font-size: 12px;
 }
