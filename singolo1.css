@@ -179,9 +179,9 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(2, 90px);
-  grid-gap: 37px 20px;
+  grid-gap: 32px 20px;
   margin-left: 40px;
-  margin-top: 37px;
+  margin-top: 44px;
   
 }
 h2 {
@@ -197,7 +197,6 @@ h2 {
   color: #666d89;
   font-family: "Lato Black";
   font-size: 30px;
-  /* font-weight: 400; */
   line-height: 17.86px;
   margin-top: 72px;
 }
@@ -205,8 +204,10 @@ p {
 color: #767e9e;
 font-family: "Lato Regular";
 font-size: 12px;
-/* font-weight: 400; */
 line-height: 21.56px;
+margin-top: 10px;
+text-align: justify;
+overflow: hidden;
 
 }
 .p-service {
@@ -214,11 +215,9 @@ line-height: 21.56px;
   color: #767e9e;
   font-family: "Lato Light";
   font-size: 18px;
-  /* font-weight: 300; */
   line-height: 30px;
   margin-top: 27px;
   letter-spacing: -0.012em;
-  /* word-spacing: -0.09em; */
   text-align: justify;
   max-width: 939px;;
  
@@ -253,4 +252,8 @@ nav a {
   /* font-weight: bold; */
   font-size: 12px;
 
+}
+.h2-bubble {
+  word-spacing: 0.001em;
+  letter-spacing: -0.02em;
 }
