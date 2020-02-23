@@ -65,8 +65,8 @@ header {
 nav {
    display: flex;
    justify-content: flex-end;
-   margin-right:20px;
-   margin-top: 45px;
+   margin-right:15px;
+   margin-top: 40px;
 
 }
 
@@ -99,24 +99,28 @@ nav {
 }
 h1 {
   float:left;
-  margin-left: 30px;
-  margin-top: 25px;
+  margin-left: 37px;
+  margin-top: 24px;
   letter-spacing: 0.01px;
   
 }
 .asterisk {
   color: #f06c64;
   font-size: 25px; 
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 6.32px;
   text-transform: uppercase; 
   font-family: "Lato Bold";
+  margin-left: -3px;
 }
 ul>li {
   display: inline-block;
   font-size: 12px;
-  font-weight: 700;
+  font-family: "Lato Bold";
+  /* font-weight: 700; */
   line-height: 6.32px;
+
+  
  
 }
 a {
@@ -136,31 +140,40 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+a:focus {
+  color: #f06c64;
+}
 
 li + li ::before {
   content: '.';
   display: block;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   margin-left: 5px;
   position: relative;
-  right:19px;
+  right:20px;
   top: 2px;
   color: #494e62;;
   
 }
+
+li + li {
+  margin-left: 1px;
+}
+
 .logo {
   font-size: 25px;
   /* font-weight: 100; */
   /* line-height: 6.32px; */
   font-family: "Lato Bold";
 }
-.logo-a {
-  /* font-size: 44px;
-  font-family: "Lato Bold"; */
-}
+/* .logo-a {
+  font-size: 44px;
+  font-family: "Lato Bold";
+} */
 li {
-  margin-right: 20px;
+  margin-right: 23px;
+  letter-spacing: 0.005em;
 }
 .grid {
   display: grid;
@@ -173,40 +186,44 @@ li {
 }
 h2 {
   color: #666d89;
-  font-family: "Lato - Black";
+  font-family: "Lato Black";
   font-size: 18px;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 17.86px;
 }
 
 .h1-service {
   margin-left: 40px;
   color: #666d89;
-  font-family: "Lato - Black";
+  font-family: "Lato Black";
   font-size: 30px;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 17.86px;
-  margin-top: 70px;
+  margin-top: 72px;
+}
+p {
+color: #767e9e;
+font-family: "Lato Regular";
+font-size: 12px;
+/* font-weight: 400; */
+line-height: 21.56px;
+
 }
 .p-service {
   margin-left: 40px;
   color: #767e9e;
-  font-family: Lato;
+  font-family: "Lato Light";
   font-size: 18px;
-  font-weight: 300;
+  /* font-weight: 300; */
   line-height: 30px;
-  margin-top: 31px;
+  margin-top: 27px;
+  letter-spacing: -0.012em;
+  /* word-spacing: -0.09em; */
+  text-align: justify;
+  max-width: 939px;;
  
 }
-p {
 
-color: #767e9e;
-font-family: Lato;
-font-size: 12px;
-font-weight: 400;
-line-height: 21.56px;
-
-}
 .pen, .lightbulb, .heart, .phone, .bubble, .star {
   display: flex;
   
@@ -235,4 +252,5 @@ nav a {
   font-family: "Lato Bold";
   /* font-weight: bold; */
   font-size: 12px;
+
 }
