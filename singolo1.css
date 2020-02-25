@@ -24,24 +24,18 @@
    box-sizing: border-box;
 }
 body {
-  /* font-family: Lato; */
   margin:0 auto;
 }
 header {
   margin: 0 auto;
   width: 1020px;
   height: 89px;
-
   border: 1px solid #2d303a;
-  /* border: 1px solid black; */
-  
   }
 .slider {
   margin: auto;
   width: 1020px;
   height: 594px;
-  /* position: relative; */
-  
 }
 .services {
   margin: auto;
@@ -51,8 +45,6 @@ header {
 .header-wrapper {
   border-bottom: 6px solid #323746;
   background-color: #2d303a;
- 
-  
 }
 .slider-wrapper {
   border-bottom: 6px solid #ea676b;
@@ -67,14 +59,12 @@ nav {
    justify-content: flex-end;
    margin-right:15px;
    margin-top: 40px;
-
 }
 
 .left-arrow {
   float:left;
   margin-top: 281px;
   margin-left: 42px;
-  
 }
  .right-arrow:hover {
   opacity: 60%;
@@ -86,7 +76,6 @@ nav {
   float:right;
   margin-top: 281px;
   margin-right:40px;
- 
 } 
 .vertical {
   margin-left: 54px;
@@ -95,19 +84,16 @@ nav {
 .horizontal {
   margin-left: 69px;
   margin-bottom: 122px;
-
 }
 h1 {
   float:left;
   margin-left: 37px;
   margin-top: 24px;
   letter-spacing: 0.01px;
-  
 }
 .asterisk {
   color: #f06c64;
   font-size: 25px; 
-  /* font-weight: 700; */
   line-height: 6.32px;
   text-transform: uppercase; 
   font-family: "Lato Bold";
@@ -117,11 +103,7 @@ ul>li {
   display: inline-block;
   font-size: 12px;
   font-family: "Lato Bold";
-  /* font-weight: 700; */
-  line-height: 6.32px;
-
-  
- 
+  line-height: 6.32px; 
 }
 a {
   text-decoration: none;
@@ -154,7 +136,6 @@ li + li ::before {
   right:20px;
   top: 2px;
   color: #494e62;;
-  
 }
 
 li + li {
@@ -163,14 +144,9 @@ li + li {
 
 .logo {
   font-size: 25px;
-  /* font-weight: 100; */
-  /* line-height: 6.32px; */
   font-family: "Lato Bold";
 }
-/* .logo-a {
-  font-size: 44px;
-  font-family: "Lato Bold";
-} */
+
 li {
   margin-right: 23px;
   letter-spacing: 0.005em;
@@ -188,7 +164,6 @@ h2 {
   color: #666d89;
   font-family: "Lato Black";
   font-size: 18px;
-  /* font-weight: 400; */
   line-height: 17.86px;
 }
 
@@ -222,18 +197,15 @@ overflow: hidden;
   max-width: 939px;;
  
 }
-
 .pen, .lightbulb, .heart, .phone, .bubble, .star {
   display: flex;
   
 }
 .wrapper {
-
   display: flex;
   align-items: center;
   flex-direction: column;
   align-items: flex-start
-
 }
 .service-img {
   width: 60px;
@@ -241,15 +213,12 @@ overflow: hidden;
   margin-right: 20px;
 }
 
-
 .service-wrap {
   display: flex;
   flex-direction: column;
-
 }
 nav a {
   font-family: "Lato Bold";
-  /* font-weight: bold; */
   font-size: 12px;
 
 }
