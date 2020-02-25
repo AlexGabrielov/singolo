@@ -52,7 +52,7 @@
 .about-us-section {
   margin: 0 auto;
   width: 1020px;
-  height: 734px;
+  height: 728px;
   padding: 67px 40px;
 }
 button > span {
@@ -90,4 +90,56 @@ button > span {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 20px;
   overflow: hidden;
+}
+
+.team-container {
+  display: flex;
+  margin-top: 42px;
+}
+.team-member {
+  width: 300px;
+}
+.team-member + .team-member {
+  margin-left: 20px;
+}
+.team-member-contacts {
+  display: flex;
+  margin-top: 22px;
+}
+.team-member-contacts > li {
+  list-style-type: none;
+}
+
+.team-member-contacts > li + li {
+  margin-left: 8px;
+}
+.team-member-name {
+  color: #666d89;
+  font-family: 'Lato Black';
+  line-height: 17.86px;
+  font-size: 18px;
+  margin-top: 16px;
+}
+.team-member-description {
+  font-family: 'Lato Regular';
+  font-size: 12px;
+  line-height: 21.56px;
+  color: #767e9e;
+  margin-top: 11px;
+}
+.about-us-header {
+  font-family: 'Lato Black';
+  font-size: 30px;
+  line-height: 17.86px;
+  color: #666d89;
+  margin-top: 5px;
+}
+.about-us-desctiption {
+  color: #767e9e;
+  font-family: 'Lato Regular';
+  line-height: 30px;
+  font-size: 18px;
+  margin-top: 27px;
+  word-spacing: 0.07em;
+  letter-spacing: -0.019em;
 }
