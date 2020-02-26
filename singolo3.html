@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>
+      Document
+    </title>
     <link rel="stylesheet" href="singolo3.css" />
   </head>
+
   <body>
     <div class="get-a-quote-wrapper">
       <section class="get-a-quote-section">
-        <h2 class="get-a-quote-header">Get a Quote</h2>
+        <h2 class="get-a-quote-header">
+          Get a Quote
+        </h2>
         <p class="get-a-quote-description">
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
           Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
@@ -17,41 +22,55 @@
           tortor mauris condimentum nibh.
         </p>
         <div class="form-and-info-wrapper">
-          <form action="#" class="get-a-quote-form">
-            <input type="text" placeholder="Name (Required)" />
-            <input type="text" placeholder="Email (Required)" />
+          <form action="#" method="POST" class="get-a-quote-form">
+            <input type="text" placeholder="Name (Required)" required />
+            <input type="text" placeholder="Email (Required)" required />
             <input type="text" placeholder="Subject" />
             <textarea
               placeholder="Describe your project in detail..."
             ></textarea>
-            <input type="submit" />
+            <input type="submit" class="submit-button" value="Submit Form" />
           </form>
           <div class="get-a-quote-contact-info">
-            <h2 class="get-a-quote-contact-info-header">Contact Information</h2>
+            <h2 class="get-a-quote-contact-info-header">
+              Contact Information
+            </h2>
             <p class="get-a-quote-contact-info-description">
               Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
               Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla
               sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
               consequat felis.
             </p>
-            <ul>
+            <ul class="get-a-quote-contact-info-contacts">
               <li>
-                <img src="./assets/images/location.png" alt="location" /><span
-                  class="info"
-                  >Elm St. 14/05 Lost City</span
-                >
+                <img
+                  src="./assets/images/location.png"
+                  alt="location"
+                  class="address-img"
+                /><span class="info">Elm St. 14/05 Lost City</span>
               </li>
               <li>
                 <img
                   src="./assets/images/phone_form.png"
                   alt="phone number"
-                /><span class="info">03528 331 86 35</span>
+                  class="phone-img"
+                /><span class="info"
+                  ><a href="tel:03528 331 86 35 " class="telephone-link"
+                    >03528 331 86 35
+                  </a></span
+                >
               </li>
               <li>
-                <img src="./assets/images/mail.png" alt="main" /><span
-                  class="info"
-                  >info@singolo.com</span
-                >
+                <img
+                  src="./assets/images/mail.png"
+                  alt="main"
+                  class="mail-info"
+                />
+                <span class="info">
+                  <a href="mailto:info@singolo.com" class="mail-link"
+                    >info@singolo.com</a
+                  >
+                </span>
               </li>
             </ul>
           </div>
@@ -66,10 +85,18 @@
           class="copyright"
         />
         <ul class="footer-contacts">
-          <li><img src="./assets/images/Facebook.png" alt="Facebook" /></li>
-          <li><img src="./assets/images/Google.png" alt="Google" /></li>
-          <li><img src="./assets/images/Twitter.png" alt="Twitter" /></li>
-          <li><img src="./assets/images/LinkedIn.png" alt="LinkedIn" /></li>
+          <li>
+            <img src="./assets/images/Facebook.png" alt="Facebook" />
+          </li>
+          <li>
+            <img src="./assets/images/Google.png" alt="Google" />
+          </li>
+          <li>
+            <img src="./assets/images/Twitter.png" alt="Twitter" />
+          </li>
+          <li>
+            <img src="./assets/images/LinkedIn.png" alt="LinkedIn" />
+          </li>
         </ul>
       </footer>
     </div>

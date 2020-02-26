@@ -34,12 +34,14 @@
   width: 1020px;
   height: 642px;
   margin: 0 auto;
-  padding: 67px 40px;
+  padding: 66px 40px;
 }
 .footer {
   width: 1020px;
   height: 76px;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 ul > li {
   list-style-type: none;
@@ -49,33 +51,40 @@ ul > li {
   display: flex;
   flex-direction: column;
   width: 619px;
-  margin-top: 48px;
+  margin-top: 42px;
 }
 textarea {
-  height: 202px;
+  height: 204px;
   background-color: #d6564f;
   resize: none;
   border-radius: 5px;
-  border-color: #f06c64;
+  border: 1px solid #f06c64;
+  padding-left: 13px;
+  padding-top: 7px;
+  color: #f0d8d9;
 }
 form > * + * {
-  margin-top: 16px;
+  margin-top: 14px;
 }
 input {
   background-color: #d6564f;
-  border-radius: 7px;
-  border-color: #f06c64;
+  border-radius: 5px;
+  border: 1px solid #f06c64;
   padding-left: 14px;
   padding-top: 12px;
   padding-bottom: 12px;
+  height: 40px;
+  color: #f0d8d9;
 }
 .form-and-info-wrapper {
   display: flex;
 }
 .footer-contacts {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  /* width: 50%; */
   padding-right: 40px;
+  padding-top: 22px;
 }
 .footer-contacts > li + li {
   margin-left: 8px;
@@ -83,7 +92,7 @@ input {
 .get-a-quote-contact-info {
   width: 301px;
   margin-left: 20px;
-  margin-top: 48px;
+  margin-top: 46px;
 }
 .get-a-quote-header {
   color: #f0d8d9;
@@ -96,7 +105,10 @@ input {
   font-family: 'Lato Light';
   font-size: 18px;
   line-height: 30px;
-  margin-top: 29px;
+  margin-top: 25px;
+  word-spacing: -0.018em;
+  letter-spacing: -0.01em;
+  text-align: justify;
 }
 .get-a-quote-contact-info-header {
   color: #f0d8d9;
@@ -109,6 +121,10 @@ input {
   font-size: 12px;
   line-height: 21.56px;
   color: #f0d8d9;
+  margin-top: 9px;
+  word-spacing: -0.018em;
+  letter-spacing: 0.01em;
+  /* text-align: justify; */
 }
 .info {
   font-family: 'Lato Regular';
@@ -120,4 +136,52 @@ input {
   margin-left: 42px;
   margin-top: 33px;
   margin-bottom: 33px;
+  align-self: flex-start;
+  margin-right: auto;
+}
+::placeholder {
+  color: #f48c8f;
+  font-family: 'Lato Regular';
+  font-size: 12px;
+  line-height: 21.56px;
+}
+.get-a-quote-contact-info-contacts {
+  margin-top: 25px;
+  margin-left: 2px;
+}
+
+.get-a-quote-contact-info-contacts span {
+  margin-left: 12px;
+}
+.submit-button {
+  color: #f0d8d9;
+  font-family: 'Lato Bold';
+  font-size: 16px;
+  width: 200px;
+  padding-left: 0;
+}
+
+.submit-button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+.address-img {
+  margin-left: 2px;
+}
+span > a {
+  text-decoration: none;
+  color: #f0d8d9;
+}
+span > a:hover {
+  opacity: 75%;
+}
+.telephone-link {
+  margin-left: -2px;
+}
+.mail-link {
+  margin-left: -7px;
+}
+.footer-contacts img:hover {
+  opacity: 65%;
+  cursor: pointer;
 }
