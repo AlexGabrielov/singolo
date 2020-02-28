@@ -372,13 +372,24 @@
           </p>
           <div class="form-and-info-wrapper">
             <form action="#" method="POST" class="get-a-quote-form">
-              <input type="text" placeholder="Name (Required)" required />
-              <input type="email" placeholder="Email (Required)" required />
-              <input type="text" placeholder="Subject" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Name (Required)"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email (Required)"
+                required
+              />
+              <input type="text" name="subject" placeholder="Subject" />
               <textarea
+                name="message"
                 placeholder="Describe your project in detail..."
               ></textarea>
-              <input type="submit" class="submit-button" value="Submit Form" />
+              <button class="submit-button">Submit Form</button>
             </form>
             <div class="get-a-quote-contact-info">
               <h2 class="get-a-quote-contact-info-header">
