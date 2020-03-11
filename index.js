@@ -23,21 +23,13 @@ SLIDER.addEventListener('click', ({ target }) => {
   }
   if (target.classList.contains('vertical')) {
     const verticalPhone = SLIDER.querySelector('.vertical-display');
-    if (verticalPhone.classList.contains('hidden')) {
-      verticalPhone.classList.remove('hidden');
-    } else {
-      verticalPhone.classList.add('hidden');
-    }
+    verticalPhone.classList.toggle('hidden');
   }
   if (target.classList.contains('horizontal-display')) {
     target.classList.add('hidden');
   }
   if (target.classList.contains('horizontal')) {
     const horizontalPhone = SLIDER.querySelector('.horizontal-display');
-    if (horizontalPhone.classList.contains('hidden')) {
-      horizontalPhone.classList.remove('hidden');
-    } else {
-      horizontalPhone.classList.add('hidden');
-    }
+    horizontalPhone.classList.toggle('hidden');
   }
 });
