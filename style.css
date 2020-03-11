@@ -306,10 +306,10 @@ li > button:hover {
   color: #dedede;
   border: 1px solid #c5c5c5;
 }
-li > button:focus {
+/* li > button:focus {
   color: #dedede;
   border: 1px solid #c5c5c5;
-}
+} */
 
 .filter {
   display: flex;
@@ -583,4 +583,7 @@ span > a:hover {
 .active-picture {
   outline: 5px solid #f06c64;
   outline-offset: -5px;
+}
+.hidden {
+  display: none;
 }
