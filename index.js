@@ -18,23 +18,23 @@ PICTUREGRID.addEventListener('click', event => {
 });
 
 SLIDER.addEventListener('click', ({ target }) => {
-  if ([...target.classList].includes('vertical-display')) {
+  if (target.classList.contains('vertical-display')) {
     target.classList.add('hidden');
   }
-  if ([...target.classList].includes('vertical')) {
+  if (target.classList.contains('vertical')) {
     const verticalPhone = SLIDER.querySelector('.vertical-display');
-    if ([...verticalPhone.classList].includes('hidden')) {
+    if (verticalPhone.classList.contains('hidden')) {
       verticalPhone.classList.remove('hidden');
     } else {
       verticalPhone.classList.add('hidden');
     }
   }
-  if ([...target.classList].includes('horizontal-display')) {
+  if (target.classList.contains('horizontal-display')) {
     target.classList.add('hidden');
   }
-  if ([...target.classList].includes('horizontal')) {
+  if (target.classList.contains('horizontal')) {
     const horizontalPhone = SLIDER.querySelector('.horizontal-display');
-    if ([...horizontalPhone.classList].includes('hidden')) {
+    if (horizontalPhone.classList.contains('hidden')) {
       horizontalPhone.classList.remove('hidden');
     } else {
       horizontalPhone.classList.add('hidden');
