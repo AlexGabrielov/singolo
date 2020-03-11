@@ -587,3 +587,7 @@ span > a:hover {
 .hidden {
   display: none;
 }
+.active-filter {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
