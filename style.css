@@ -34,6 +34,8 @@ header {
   margin: auto;
   width: 1020px;
   height: 594px;
+  /* dom */
+  position: relative;
 }
 .services {
   margin: auto;
@@ -107,24 +109,25 @@ h1 {
 }
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 a:link {
   text-decoration: none;
   color: #ffffff;
 }
-a:visited {
+/* a:visited {
   text-decoration: none;
   color: #ffffff;
-}
+} */
 a:hover {
   color: #f06c64;
 }
-a:active {
+/* a:active {
   text-decoration: none;
-}
-a:focus {
+} */
+/* a:focus {
   color: #f06c64;
-}
+} */
 
 .header-li + li ::before {
   content: '.';
@@ -561,4 +564,19 @@ span > a:hover {
 .footer-contacts img:hover {
   opacity: 65%;
   cursor: pointer;
+}
+/* stuff for DOM task */
+
+.vertical-display {
+  position: absolute;
+  left: 126px;
+  top: 118px;
+}
+.horizontal-display {
+  position: absolute;
+  left: 485px;
+  top: 188px;
+}
+.active-menu {
+  color: #f06c64;
 }
