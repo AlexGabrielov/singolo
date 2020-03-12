@@ -11,6 +11,7 @@ const MESSAGEBLOCK = document.getElementById('message-block');
 const SUBMITBUTTON = document.getElementById('submit-button');
 const CLOSEBUTTON = document.getElementById('close-button');
 const FORM = document.getElementById('form');
+const portfolioPicturesArray = [...portfolioPictures];
 
 NAV.addEventListener('click', event => {
   navLisA.forEach(a => a.classList.remove('active-menu'));
@@ -43,9 +44,12 @@ FILTER.addEventListener('click', ({ target, currentTarget }) => {
   if (target === currentTarget) {
     return;
   }
-  console.log(target.closest('button'));
   filterButtons.forEach(({ classList }) => classList.remove('active-filter'));
   target.closest('button').classList.add('active-filter');
+
+  portfolioPicturesArray.forEach(e => PICTUREGRID.removeChild(e));
+  portfolioPicturesArray.reverse();
+  portfolioPicturesArray.forEach(e => PICTUREGRID.appendChild(e));
 });
 
 FORM.addEventListener('submit', event => {
