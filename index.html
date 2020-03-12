@@ -381,26 +381,51 @@
             tortor mauris condimentum nibh.
           </p>
           <div class="form-and-info-wrapper">
-            <form action="#" method="POST" class="get-a-quote-form">
+            <form action="#" method="POST" class="get-a-quote-form" id="form">
               <input
                 type="text"
                 name="name"
+                id="name"
                 placeholder="Name (Required)"
                 required
               />
               <input
                 type="email"
                 name="email"
+                id="email"
                 placeholder="Email (Required)"
                 required
               />
-              <input type="text" name="subject" placeholder="Subject" />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              />
               <textarea
                 name="message"
+                id="textarea"
                 placeholder="Describe your project in detail..."
               ></textarea>
-              <button class="submit-button">Submit Form</button>
+              <button class="submit-button" id="submit-button">
+                Submit Form
+              </button>
             </form>
+
+            <div id="message-block" class="hidden">
+              <div id="message-block-content">
+                <span>Письмо отправлено</span>
+                <p>
+                  <span id="subject-span"></span>
+                  <br />
+
+                  <span id="description-span"></span>
+                  <br />
+                </p>
+                <button id="close-button">OK</button>
+              </div>
+            </div>
+
             <div class="get-a-quote-contact-info">
               <h2 class="get-a-quote-contact-info-header">
                 Contact Information
