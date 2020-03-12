@@ -12,6 +12,7 @@ const SUBMITBUTTON = document.getElementById('submit-button');
 const CLOSEBUTTON = document.getElementById('close-button');
 const FORM = document.getElementById('form');
 const portfolioPicturesArray = [...portfolioPictures];
+const SLIDERWRAPPER = document.getElementsByClassName('slider-wrapper')[0];
 
 NAV.addEventListener('click', event => {
   navLisA.forEach(a => a.classList.remove('active-menu'));
@@ -38,6 +39,9 @@ SLIDER.addEventListener('click', ({ target }) => {
   if (target.classList.contains('horizontal')) {
     const horizontalPhone = SLIDER.querySelector('.horizontal-display');
     horizontalPhone.classList.toggle('hidden');
+  }
+  if (target.classList.contains('arrow')) {
+    SLIDERWRAPPER.classList.toggle('blue');
   }
 });
 FILTER.addEventListener('click', ({ target, currentTarget }) => {
