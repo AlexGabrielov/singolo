@@ -80,12 +80,16 @@ header {
   right: 40px;
 }
 .vertical {
+  position: relative;
   margin-left: 112px;
   margin-top: 53px;
+  z-index: 1;
 }
 .horizontal {
-  margin-left: 69px;
-  margin-bottom: 122px;
+  position: relative;
+  margin-left: 93px;
+  margin-bottom: 121px;
+  z-index: 1;
 }
 h1 {
   float: left;
@@ -562,11 +566,13 @@ span > a:hover {
   position: absolute;
   left: 126px;
   top: 118px;
+  z-index: 1;
 }
 .horizontal-display {
   position: absolute;
   left: 485px;
   top: 188px;
+  z-index: 1;
 }
 .active-menu {
   color: #f06c64;
@@ -632,4 +638,17 @@ span > a:hover {
 .fade {
   animation-name: fade;
   animation-duration: 1s;
+}
+.vertical-shadow,
+.horizontal-shadow {
+  position: absolute;
+  z-index: 0;
+}
+.vertical-shadow {
+  top: 53px;
+  left: 112px;
+}
+.horizontal-shadow {
+  top: 176px;
+  right: 109px;
 }
