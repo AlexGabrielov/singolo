@@ -17,7 +17,9 @@
   font-family: 'Lato Black';
   src: url('assets/fonts/Lato-Black.ttf');
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
