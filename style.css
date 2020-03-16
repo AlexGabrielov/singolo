@@ -17,7 +17,9 @@
   font-family: 'Lato Black';
   src: url('assets/fonts/Lato-Black.ttf');
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +36,8 @@ header {
   margin: auto;
   width: 1020px;
   height: 594px;
+  /* dom */
+  position: relative;
 }
 .services {
   margin: auto;
@@ -60,9 +64,9 @@ header {
 }
 
 .left-arrow {
-  float: left;
-  margin-top: 281px;
-  margin-left: 42px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 40px;
 }
 .right-arrow:hover {
   opacity: 60%;
@@ -73,17 +77,21 @@ header {
   cursor: pointer;
 }
 .right-arrow {
-  float: right;
-  margin-top: 281px;
-  margin-right: 40px;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 40px;
 }
 .vertical {
-  margin-left: 54px;
+  position: relative;
+  margin-left: 112px;
   margin-top: 53px;
+  z-index: 1;
 }
 .horizontal {
-  margin-left: 69px;
-  margin-bottom: 122px;
+  position: relative;
+  margin-left: 93px;
+  margin-bottom: 121px;
+  z-index: 1;
 }
 h1 {
   float: left;
@@ -107,22 +115,14 @@ h1 {
 }
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 a:link {
   text-decoration: none;
   color: #ffffff;
 }
-a:visited {
-  text-decoration: none;
-  color: #ffffff;
-}
+
 a:hover {
-  color: #f06c64;
-}
-a:active {
-  text-decoration: none;
-}
-a:focus {
   color: #f06c64;
 }
 
@@ -303,10 +303,10 @@ li > button:hover {
   color: #dedede;
   border: 1px solid #c5c5c5;
 }
-li > button:focus {
+/* li > button:focus {
   color: #dedede;
   border: 1px solid #c5c5c5;
-}
+} */
 
 .filter {
   display: flex;
@@ -561,4 +561,96 @@ span > a:hover {
 .footer-contacts img:hover {
   opacity: 65%;
   cursor: pointer;
+}
+/* stuff for DOM task */
+
+.vertical-display {
+  position: absolute;
+  left: 126px;
+  top: 118px;
+  z-index: 1;
+}
+.horizontal-display {
+  position: absolute;
+  left: 485px;
+  top: 188px;
+  z-index: 1;
+}
+.active-menu {
+  color: #f06c64;
+}
+.active-picture {
+  outline: 5px solid #f06c64;
+  outline-offset: -5px;
+}
+
+.active-filter {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+#message-block {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid black;
+  background: #0005;
+}
+#message-block-content {
+  width: 320px;
+  height: 200px;
+  font-size: 34px;
+  font-family: 'Lato Bold';
+  color: cyan;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 160px);
+  text-align: center;
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+#close-button {
+  background-color: #d6564f;
+  border-radius: 5px;
+  border: 1px solid #f06c64;
+  width: 100px;
+  color: white;
+  font-family: 'Lato Regular';
+}
+
+.slide-one,
+.slide-two {
+  width: 1020px;
+}
+.blue {
+  background-color: #648bf0;
+  border-bottom: 6px solid #648bf0;
+}
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.vertical-shadow,
+.horizontal-shadow {
+  position: absolute;
+  z-index: 0;
+}
+.vertical-shadow {
+  top: 53px;
+  left: 112px;
+}
+.horizontal-shadow {
+  top: 176px;
+  right: 109px;
 }

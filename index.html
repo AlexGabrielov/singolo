@@ -17,44 +17,71 @@
           </a>
         </h1>
         <nav class="header-nav">
-          <ul class="header-ul">
+          <ul class="header-ul" id="nav">
             <li class="header-li"><a href="#">HOME</a></li>
-            <li class="header-li"><a href="#">SERVICES</a></li>
-            <li class="header-li"><a href="#">PORTFOLIO</a></li>
-            <li class="header-li"><a href="#">ABOUT</a></li>
-            <li class="header-li"><a href="#">CONTACT</a></li>
+            <li class="header-li"><a href="#services">SERVICES</a></li>
+            <li class="header-li"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="header-li"><a href="#about">ABOUT</a></li>
+            <li class="header-li"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </header>
     </div>
     <main>
       <div class="slider-wrapper">
-        <section class="slider">
-          <img
-            src="assets/images/iPhone_Vertical.png"
-            class="vertical"
-            alt="iPhone vertical"
-          />
-          <img
-            src="assets/images/iPhone_Horizontal.png"
-            class="horizontal"
-            alt="iPhone horizontal"
-          />
+        <section class="slider" id="slider">
+          <div class="carousel">
+            <div class="slide-one fade">
+              <img
+                src="assets/images/phone-vertical.png"
+                class="vertical"
+                alt="iPhone vertical"
+              />
+              <img
+                src="assets/images/phone-horizontal.png"
+                class="horizontal"
+                alt="iPhone horizontal"
+              />
+              <img
+                src="assets/images/phone-vertical-shadow.png"
+                class="vertical-shadow"
+                alt="iPhone vertical shadow"
+              />
+              <img
+                src="assets/images/phone-horizontal-shadow.png"
+                class="horizontal-shadow"
+                alt="iPhone horizontal shadow"
+              />
+              <img
+                src="assets/images/phone-vertical-display.png"
+                alt="horizontal display"
+                class="vertical-display"
+              />
+              <img
+                src="assets/images/phone-horizontal-display.png"
+                alt="vertical display"
+                class="horizontal-display"
+              />
+            </div>
+            <div class="slide-two fade hidden">
+              <img src="assets/images/Slide-2.png" alt="second slide" />
+            </div>
+          </div>
           <img
             src="assets/images/left-arrow.png"
-            class="left-arrow"
+            class="left-arrow arrow"
             alt="left arrow"
           />
           <img
             src="assets/images/right-arrow.png"
-            class="right-arrow"
+            class="right-arrow arrow"
             alt="right arrow"
           />
         </section>
       </div>
 
       <div class="services-wrapper">
-        <section class="services">
+        <section class="services" id="services">
           <div class="service-wrap">
             <h1 class="h1-service">Our Services</h1>
             <p class="p-service">
@@ -151,14 +178,14 @@
       </div>
 
       <div class="portfolio-section-wrapper">
-        <section class="portfolio-section">
+        <section class="portfolio-section" id="portfolio">
           <h2 class="portfolio-header">Portfolio</h2>
           <p class="portfolio-description">
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit.
           </p>
           <nav class="nav-filter">
-            <ul class="filter">
+            <ul class="filter" id="filter">
               <li class="filter-options-li">
                 <button class="button-all"><span>All</span></button>
               </li>
@@ -177,7 +204,7 @@
               </li>
             </ul>
           </nav>
-          <div class="picture-grid">
+          <div class="picture-grid" id="pictures">
             <img
               src="./assets/images/portfolio-1.png"
               alt="boat"
@@ -242,7 +269,7 @@
         </section>
       </div>
       <div class="about-us-section-wrapper">
-        <section class="about-us-section">
+        <section class="about-us-section" id="about">
           <h2 class="about-us-header">About Us</h2>
           <p class="about-us-desctiption">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -360,7 +387,7 @@
       </div>
 
       <div class="get-a-quote-wrapper">
-        <section class="get-a-quote-section">
+        <section class="get-a-quote-section" id="contact">
           <h2 class="get-a-quote-header">
             Get a Quote
           </h2>
@@ -371,26 +398,51 @@
             tortor mauris condimentum nibh.
           </p>
           <div class="form-and-info-wrapper">
-            <form action="#" method="POST" class="get-a-quote-form">
+            <form action="#" method="POST" class="get-a-quote-form" id="form">
               <input
                 type="text"
                 name="name"
+                id="name"
                 placeholder="Name (Required)"
                 required
               />
               <input
                 type="email"
                 name="email"
+                id="email"
                 placeholder="Email (Required)"
                 required
               />
-              <input type="text" name="subject" placeholder="Subject" />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              />
               <textarea
                 name="message"
+                id="textarea"
                 placeholder="Describe your project in detail..."
               ></textarea>
-              <button class="submit-button">Submit Form</button>
+              <button class="submit-button" id="submit-button">
+                Submit Form
+              </button>
             </form>
+
+            <div id="message-block" class="hidden">
+              <div id="message-block-content">
+                <span>Письмо отправлено</span>
+                <p>
+                  <span id="subject-span"></span>
+                  <br />
+
+                  <span id="description-span"></span>
+                  <br />
+                </p>
+                <button id="close-button">OK</button>
+              </div>
+            </div>
+
             <div class="get-a-quote-contact-info">
               <h2 class="get-a-quote-contact-info-header">
                 Contact Information
@@ -459,5 +511,6 @@
         </footer>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
