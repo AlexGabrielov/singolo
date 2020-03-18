@@ -25,7 +25,10 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
+main {
+  position: relative;
+  top: 95px;
+}
 header {
   margin: 0 auto;
   width: 1020px;
@@ -45,6 +48,9 @@ header {
   width: 1020px;
 }
 .header-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   border-bottom: 6px solid #323746;
   background-color: #2d303a;
 }
