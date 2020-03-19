@@ -31,13 +31,13 @@ main {
 }
 header {
   margin: 0 auto;
-  width: 1020px;
+  max-width: 1020px;
   height: 89px;
   border: 1px solid #2d303a;
 }
 .slider {
   margin: auto;
-  width: 1020px;
+  max-width: 1020px;
   height: 594px;
   /* dom */
   position: relative;
@@ -45,7 +45,7 @@ header {
 .services {
   margin: auto;
   height: 496px;
-  width: 1020px;
+  max-width: 1020px;
 }
 .header-wrapper {
   position: fixed;
@@ -258,7 +258,7 @@ a:hover {
 }
 .portfolio-section {
   margin: 0 auto;
-  width: 1020px;
+  max-width: 1020px;
   height: 864px;
   padding: 73px 40px;
   margin-top: -2px;
@@ -286,7 +286,7 @@ a:hover {
 }
 .about-us-section {
   margin: 0 auto;
-  width: 1020px;
+  max-width: 1020px;
   height: 728px;
   padding: 67px 40px;
 }
@@ -345,7 +345,7 @@ li > button:hover {
   margin-top: 42px;
 }
 .team-member {
-  width: 300px;
+  max-width: 300px;
 }
 .team-member + .team-member {
   margin-left: 20px;
@@ -411,13 +411,13 @@ li > a > img:hover {
   background-color: #2d303a;
 }
 .get-a-quote-section {
-  width: 1020px;
+  max-width: 1020px;
   height: 642px;
   margin: 0 auto;
   padding: 66px 40px;
 }
 .footer {
-  width: 1020px;
+  max-width: 1020px;
   height: 76px;
   margin: 0 auto;
   display: flex;
@@ -634,7 +634,7 @@ span > a:hover {
 
 .slide-one,
 .slide-two {
-  width: 1020px;
+  max-width: 1020px;
 }
 .blue {
   background-color: #648bf0;
