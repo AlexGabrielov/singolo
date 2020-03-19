@@ -13,6 +13,34 @@ const CLOSEBUTTON = document.getElementById('close-button');
 const FORM = document.getElementById('form');
 const portfolioPicturesArray = [...portfolioPictures];
 const SLIDERWRAPPER = document.getElementsByClassName('slider-wrapper')[0];
+const html = document.documentElement;
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll() {
+  const currentPosition = window.scrollY;
+  const divs = document.querySelectorAll('main > .menu-item');
+
+  divs.forEach(el => {
+    if (
+      el.offsetTop <= currentPosition &&
+      el.offsetHeight + el.offsetTop > currentPosition
+    ) {
+      navLisA.forEach(a => {
+        a.classList.remove('active-menu');
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('active-menu');
+        }
+      });
+    }
+  });
+  if (html.scrollHeight - html.clientHeight === window.scrollY) {
+    navLisA.forEach(a => {
+      a.classList.remove('active-menu');
+    });
+    document.getElementById('contact-link').classList.add('active-menu');
+  }
+}
 
 NAV.addEventListener('click', event => {
   navLisA.forEach(a => a.classList.remove('active-menu'));
