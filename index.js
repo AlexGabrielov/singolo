@@ -70,8 +70,8 @@ SLIDER.addEventListener('click', ({ target }) => {
   }
   if (target.classList.contains('arrow')) {
     SLIDERWRAPPER.classList.toggle('blue');
-    document.getElementsByClassName('slide-one')[0].classList.toggle('hidden');
-    document.getElementsByClassName('slide-two')[0].classList.toggle('hidden');
+    document.getElementsByClassName('slide-one')[0].classList.toggle('active');
+    document.getElementsByClassName('slide-two')[0].classList.toggle('active');
   }
 });
 FILTER.addEventListener('click', ({ target, currentTarget }) => {
