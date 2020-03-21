@@ -97,8 +97,10 @@ header {
 }
 .horizontal {
   position: relative;
-  margin-left: 93px;
-  margin-bottom: 121px;
+  /* margin-left: 93px;
+  margin-bottom: 121px; */
+  top: -121px;
+  right: -93px;
   z-index: 1;
 }
 h1 {
@@ -617,7 +619,8 @@ span > a:hover {
 }
 .horizontal-display {
   position: absolute;
-  left: 485px;
+  /* left: 485px; */
+  right: 202px;
   top: 188px;
   z-index: 1;
 }
@@ -654,6 +657,10 @@ span > a:hover {
   text-align: center;
   overflow: hidden;
 }
+#message-block-p {
+  height: 50%;
+  overflow: auto;
+}
 .hidden {
   display: none;
 }
@@ -670,6 +677,7 @@ span > a:hover {
 .slide-two {
   max-width: 1020px;
   display: none;
+  height: 100%;
 }
 .active {
   display: block;
@@ -689,6 +697,18 @@ span > a:hover {
   left: 112px;
 }
 .horizontal-shadow {
-  top: 176px;
-  right: 109px;
+  top: 174px;
+  right: 112px;
 }
+.carousel {
+  height: 100%;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+}
+@media (max-width: 375px) {
+}
+/* @media (max-width: 320px) {
+} */
