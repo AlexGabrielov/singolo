@@ -97,11 +97,10 @@ header {
 }
 .horizontal {
   position: relative;
-  /* margin-left: 93px;
-  margin-bottom: 121px; */
   top: -121px;
   right: -93px;
   z-index: 1;
+  width: calc((458 / 1020) * 100%);
 }
 h1 {
   float: left;
@@ -710,5 +709,5 @@ span > a:hover {
 }
 @media (max-width: 375px) {
 }
-/* @media (max-width: 320px) {
-} */
+@media (max-width: 320px) {
+}
