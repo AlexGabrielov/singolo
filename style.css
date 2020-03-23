@@ -539,15 +539,16 @@ input {
   margin-left: 12px;
 }
 .submit-button {
-  color: #f0d8d9;
+  color: #886a30;
   font-family: 'Lato Bold';
-  font-size: 16px;
-  width: 200px;
+  font-size: 14px;
+  line-height: 17px;
+  width: 136px;
+  height: 38px;
   padding-left: 0;
-  background-color: #d6564f;
+  background-color: #fbc65f;
   border-radius: 5px;
   border: 1px solid #f06c64;
-  height: 40px;
 }
 
 .submit-button:hover {
