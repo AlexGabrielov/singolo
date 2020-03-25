@@ -50,7 +50,7 @@ header {
 .header-wrapper {
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
   border-bottom: 6px solid #323746;
   background-color: #2d303a;
 }
@@ -93,16 +93,17 @@ header {
   z-index: 5;
 }
 .vertical {
-  position: relative;
-  margin-left: 112px;
-  margin-top: 53px;
+  position: absolute;
+  left: calc((112 / 1020) * 100%);
+  top: calc((53 / 594) * 100%);
   z-index: 1;
   cursor: pointer;
+  width: calc((216 / 1020) * 100%);
 }
 .horizontal {
   position: absolute;
-  top: 174px;
-  right: 137px;
+  top: calc((174 / 594) * 100%);
+  left: calc((425 / 1020) * 100%);
   z-index: 1;
   width: calc((458 / 1020) * 100%);
   cursor: pointer;
@@ -167,11 +168,12 @@ a:hover {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(2, 90px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 32px 20px;
   margin-left: 40px;
   margin-top: 44px;
+  margin-right: 40px;
 }
 .h2-pen,
 .h2-lightbulb,
@@ -513,7 +515,7 @@ input {
   color: #f0d8d9;
 }
 .copyright {
-  margin-left: 42px;
+  margin-left: 40px;
   margin-top: 35px;
   margin-bottom: 33px;
   align-self: flex-start;
@@ -575,6 +577,7 @@ span > a:hover {
   opacity: 65%;
   cursor: pointer;
 }
+
 /* stuff for DOM task */
 
 @keyframes left {
@@ -614,17 +617,19 @@ span > a:hover {
 
 .vertical-display {
   position: absolute;
-  left: 126px;
-  top: 118px;
+  left: calc((126 / 1020) * 100%);
+  top: calc((118 / 594) * 100%);
   z-index: 1;
   cursor: pointer;
+  width: calc((188 / 1020) * 100%);
 }
 .horizontal-display {
   position: absolute;
-  right: 202px;
-  top: 188px;
+  left: calc((485 / 1020) * 100%);
+  top: calc((188 / 595) * 100%);
   z-index: 1;
   cursor: pointer;
+  width: calc((333 / 1020) * 100%);
 }
 .active-menu {
   color: #f06c64;
@@ -684,6 +689,10 @@ span > a:hover {
 .slide-2 {
   z-index: 2;
 }
+#carousel > div.slide.slide-two > img {
+  width: 100%;
+  height: 100%;
+}
 
 .blue {
   background-color: #648bf0;
@@ -696,12 +705,14 @@ span > a:hover {
   z-index: 0;
 }
 .vertical-shadow {
-  top: 53px;
-  left: 112px;
+  top: calc((53 / 594) * 100%);
+  left: calc((112 / 1020) * 100%);
+  width: calc((240 / 1020) * 100%);
 }
 .horizontal-shadow {
-  top: 174px;
-  right: 112px;
+  top: calc((174 / 594) * 100%);
+  left: calc((425 / 1020) * 100%);
+  width: calc((483 / 1020) * 100%);
 }
 .carousel {
   height: 100%;
@@ -711,9 +722,184 @@ span > a:hover {
 /* responsive */
 
 @media (min-width: 768px) and (max-width: 1019px) {
+  /* slider */
+
+  .slider {
+    /* margin: auto;
+  max-width: 1020px; */
+    height: 452px;
+    /* position: relative;
+  overflow: hidden; */
+  }
+  .vertical {
+    position: absolute;
+    left: 84px;
+    top: 41px;
+    z-index: 1;
+    cursor: pointer;
+    width: 162px;
+    height: 344px;
+  }
+  .vertical-display {
+    position: absolute;
+    left: 95px;
+    top: 90px;
+    z-index: 1;
+    cursor: pointer;
+    width: 142px;
+    height: 251px;
+  }
+
+  .vertical-shadow {
+    left: 84px;
+    top: 41px;
+    width: 181px;
+    height: 364px;
+  }
+
+  .horizontal {
+    position: absolute;
+    top: 133px;
+    left: 319px;
+    z-index: 1;
+    width: 344px;
+    height: 162px;
+    cursor: pointer;
+  }
+  .horizontal-display {
+    position: absolute;
+    left: 364px;
+    top: 144px;
+    z-index: 1;
+    cursor: pointer;
+    width: 250px;
+    height: 141px;
+  }
+  .horizontal-shadow {
+    top: 134px;
+    left: 320px;
+    width: 364px;
+    height: 181px;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 212px;
+    right: 27px;
+    z-index: 5;
+  }
+  .left-arrow {
+    /* position: absolute; */
+    top: 212px;
+    left: 29px;
+    /* z-index: 5; */
+  }
+
+  /* Our services */
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 39px 53px;
+
+    margin-top: 28px;
+  }
+  .services {
+    margin: auto;
+    height: 664px;
+    max-width: 1020px;
+  }
+  .h1-service {
+    margin-left: 41px;
+
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 39px;
+  }
+
+  .p-service {
+    margin-left: 40px;
+    color: #767e9e;
+    font-family: 'Lato Light';
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 18px;
+    /* letter-spacing: -0.012em; */
+    text-align: justify;
+    max-width: 939px;
+    max-height: 99px;
+    /* overflow: hidden; */
+    margin-right: 40px;
+  }
+
+  /* portfolio */
+
+  .portfolio-section {
+    /* margin: 0 auto;
+    max-width: 1020px; */
+    height: 1094px;
+    padding: 73px 40px;
+    margin-top: -2px;
+    overflow: hidden;
+  }
+  .picture-grid {
+    margin-top: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  .portfolio-img {
+    width: 100%;
+  }
+
+  /* About Us */
+
+  .team-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
+  .team-member + .team-member {
+    margin-left: 0;
+  }
+  .about-us-section {
+    margin: 0 auto;
+    max-width: 1020px;
+    /* height: 669px; */
+    /* padding: 67px 40px; */
+    padding-top: 65px;
+    padding-bottom: 69px;
+  }
+  .team-member {
+    width: 32%;
+  }
+
+  .team-member-img {
+    width: 100%;
+  }
+  /* Get a quote */
+
+  .get-a-quote-form {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    margin-top: 19px;
+  }
+  .get-a-quote-section {
+    /* max-width: 1020px; */
+    height: auto;
+    /* margin: 0 auto; */
+    padding-top: 66px;
+    padding-bottom: 42px;
+    height: auto;
+  }
+
+  /* Footer */
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
+  .portfolio-img:nth-child(n + 9) {
+    display: none;
+  }
 }
 
 @media (max-width: 374px) {
