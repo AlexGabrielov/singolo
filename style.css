@@ -1012,6 +1012,27 @@ span > a:hover {
   }
 
   /* portfolio */
+  .portfolio-section {
+    height: auto;
+    padding: 42px 30px;
+    margin-top: -2px;
+    overflow: hidden;
+  }
+  .picture-grid {
+    margin-top: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 14px 13px;
+  }
+  .portfolio-header {
+    line-height: 36px;
+  }
+  .portfolio-description {
+    margin-top: 14px;
+  }
+  .portfolio-img {
+    width: 100%;
+  }
 
   .portfolio-img:nth-child(n + 9) {
     display: none;
