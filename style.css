@@ -721,7 +721,7 @@ span > a:hover {
 
 /* responsive */
 
-@media (min-width: 768px) and (max-width: 1019px) {
+@media (max-width: 1019px) {
   /* Header */
 
   /* slider */
@@ -898,7 +898,7 @@ span > a:hover {
   /* Footer */
 }
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
   /* Header */
 
   /* slider */
@@ -1039,6 +1039,59 @@ span > a:hover {
   }
 
   /* About Us */
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-top: 22px;
+  }
+  .team-member + .team-member {
+    margin-left: 0;
+  }
+  .about-us-header {
+    line-height: 36px;
+  }
+  .about-us-desctiption {
+    margin-top: 14px;
+    text-align: left;
+  }
+  .about-us-section {
+    height: auto;
+
+    padding-top: 33px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .team-member {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 34px;
+  }
+  .team-member-contacts {
+    margin-top: 12px;
+  }
+
+  .team-member-img {
+    width: 100%;
+  }
+
+  /* Get a quote */
+
+  .get-a-quote-form {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    margin-top: 19px;
+  }
+  .get-a-quote-section {
+    /* max-width: 1020px; */
+    height: auto;
+    /* margin: 0 auto; */
+    padding-top: 66px;
+    padding-bottom: 42px;
+    height: auto;
+  }
 
   /* Get a quote */
 
