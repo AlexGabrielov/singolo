@@ -974,13 +974,48 @@ span > a:hover {
     /* z-index: 5; */
   }
 
+  /* Our services */
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 15px;
+
+    margin-top: 25px;
+  }
+  .services {
+    /* margin: auto; */
+    height: 1032px;
+    /* max-width: 1020px; */
+  }
+  .h1-service {
+    margin-left: 32px;
+
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 25px;
+  }
+
+  .p-service {
+    margin-left: 40px;
+    color: #767e9e;
+    font-family: 'Lato Light';
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 18px;
+    /* letter-spacing: -0.012em; */
+    text-align: left;
+    /* max-width: 939px; */
+    max-height: 215px;
+    /* overflow: auto; */
+    margin-right: 40px;
+  }
+
   /* portfolio */
 
   .portfolio-img:nth-child(n + 9) {
     display: none;
   }
-
-  /* Our services */
 
   /* About Us */
 
