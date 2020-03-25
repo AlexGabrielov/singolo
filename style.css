@@ -722,6 +722,8 @@ span > a:hover {
 /* responsive */
 
 @media (min-width: 768px) and (max-width: 1019px) {
+  /* Header */
+
   /* slider */
 
   .slider {
@@ -897,9 +899,94 @@ span > a:hover {
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
+  /* Header */
+
+  /* slider */
+
+  .slider {
+    height: 221px;
+  }
+  .vertical {
+    position: absolute;
+    left: 41px;
+    top: 20px;
+    z-index: 1;
+    cursor: pointer;
+    width: 79px;
+    height: 168px;
+  }
+
+  .vertical-display {
+    position: absolute;
+    left: 46px;
+    top: 44px;
+    z-index: 1;
+    cursor: pointer;
+    width: 69px;
+    height: 122px;
+  }
+
+  .vertical-shadow {
+    left: 41px;
+    top: 20px;
+    width: 88px;
+    height: 178px;
+  }
+
+  .horizontal {
+    position: absolute;
+    top: 65px;
+    left: 156px;
+    z-index: 1;
+    width: 168px;
+    height: 79px;
+    cursor: pointer;
+  }
+  .horizontal-display {
+    position: absolute;
+    left: 178px;
+    top: 70px;
+    z-index: 1;
+    cursor: pointer;
+    width: 122px;
+    height: 69px;
+  }
+  .horizontal-shadow {
+    top: 65px;
+    left: 156px;
+    width: 178px;
+    height: 88px;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 98px;
+    right: 10px;
+    width: 14px;
+    height: 25px;
+    z-index: 5;
+  }
+  .left-arrow {
+    /* position: absolute; */
+    top: 98px;
+    left: 10px;
+    width: 14px;
+    height: 25px;
+    /* z-index: 5; */
+  }
+
+  /* portfolio */
+
   .portfolio-img:nth-child(n + 9) {
     display: none;
   }
+
+  /* Our services */
+
+  /* About Us */
+
+  /* Get a quote */
+
+  /* Footer */
 }
 
 @media (max-width: 374px) {
