@@ -170,3 +170,13 @@ CLOSEBUTTON.addEventListener('click', () => {
   MESSAGEBLOCK.classList.add('hidden');
   FORM.reset();
 });
+
+document
+  .querySelector('body > div > header > nav > div')
+  .addEventListener('click', ({ target }) => {
+    target.classList.toggle('active-hamburger');
+    NAV.classList.toggle('active-hamburger-menu');
+    document
+      .querySelector('body > div > header > h1')
+      .classList.toggle('active-header');
+  });

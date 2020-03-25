@@ -30,6 +30,8 @@ main {
   top: 95px;
 }
 header {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1020px;
   height: 89px;
@@ -71,7 +73,9 @@ header {
   margin-right: 15px;
   margin-top: 39px;
 }
-
+.menu-button {
+  display: none;
+}
 .left-arrow {
   position: absolute;
   top: calc(50% - 15px);
@@ -888,7 +892,93 @@ span > a:hover {
 
 @media (max-width: 767px) {
   /* Header */
+  header {
+    height: 71px;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-ul > li {
+    margin-bottom: 22px;
+  }
+  .header-li > a {
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 71px;
+  }
+  .header-li + li ::before {
+    display: none;
+  }
+  .header-wrapper {
+    border-bottom: 3px solid #323746;
+  }
+  main {
+    position: relative;
+    top: 71px;
+  }
+  .slider-wrapper {
+    scroll-margin-top: 71px;
+    transition: all ease 1s;
+  }
+  .services-wrapper {
+    scroll-margin-top: 71px;
+  }
+  .portfolio-section-wrapper {
+    scroll-margin-top: 71px;
+  }
+  .about-us-section-wrapper {
+    scroll-margin-top: 71px;
+  }
+  .get-a-quote-wrapper {
+    scroll-margin-top: 71px;
+  }
+  .menu-button {
+    display: block;
+    width: 25px;
+    height: 20px;
+    background-image: url(./assets/images/Burger-menu-icon.png);
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    z-index: 10;
+  }
+  header > h1 {
+    z-index: 11;
+    /* margin-left: 71px; */
+    align-self: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .header-nav {
+    margin-right: 0;
+  }
+  .header-li + li {
+    margin-left: 0;
+  }
+  .header-ul {
+    display: none;
+  }
+  .active-hamburger {
+    transform: rotate(90deg);
+  }
+  .active-hamburger-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 
+    height: 100vh;
+    width: 278px;
+    top: 0;
+    left: 0;
+    box-shadow: 150px 0px 0px 500px #2d303a66;
+    background-color: #2d303a;
+  }
+  .active-header {
+    position: relative;
+    left: -50px;
+  }
   /* slider */
 
   .slider {
@@ -1097,14 +1187,15 @@ span > a:hover {
   }
 
   /* Footer */
+
   .copyright {
     display: none;
   }
   .footer-contacts {
- 
     padding-right: 0;
     padding-top: 22px;
     margin: 0 auto;
+  }
 }
 
 @media (max-width: 374px) {
