@@ -45,6 +45,9 @@ function onScroll() {
 
 NAV.addEventListener('click', event => {
   navLisA.forEach(a => a.classList.remove('active-menu'));
+
+  NAV.classList.remove('active-hamburger-menu');
+
   event.target.classList.add('active-menu');
 });
 
