@@ -158,9 +158,9 @@ FORM.addEventListener('submit', event => {
 
   const subjectSpan = document.getElementById('subject-span');
   const descriptionSpan = document.getElementById('description-span');
-  subjectSpan.innerText = subject ? `Тема: ${subject}` : 'Без темы';
+  subjectSpan.innerText = subject ? `Тема: ${subject}` : 'Нет темы';
 
-  descriptionSpan.innerText = details ? `Описание: ${details}` : 'Без описания';
+  descriptionSpan.innerText = details ? `Описание: ${details}` : 'Нет описания';
   MESSAGEBLOCK.classList.remove('hidden');
 
   event.preventDefault();

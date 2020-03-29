@@ -141,9 +141,9 @@ a:link {
   color: #ffffff;
 }
 
-a:hover {
+/* a:hover {
   color: #f06c64;
-}
+} */
 
 .header-li + li ::before {
   content: '.';
@@ -419,9 +419,9 @@ li > a > img:hover {
 }
 .get-a-quote-section {
   max-width: 1020px;
-  height: 642px;
+  height: 647px;
   margin: 0 auto;
-  padding: 66px 40px;
+  padding: 71px 40px;
 }
 .footer {
   max-width: 1020px;
@@ -441,7 +441,7 @@ ul > li {
   margin-top: 42px;
 }
 textarea {
-  height: 204px;
+  height: 164px;
   background-color: #d6564f;
   resize: none;
   border-radius: 5px;
