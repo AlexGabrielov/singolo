@@ -82,14 +82,7 @@ header {
   left: 40px;
   z-index: 5;
 }
-.right-arrow:hover {
-  opacity: 60%;
-  cursor: pointer;
-}
-.left-arrow:hover {
-  opacity: 60%;
-  cursor: pointer;
-}
+
 .right-arrow {
   position: absolute;
   top: calc(50% - 15px);
@@ -140,10 +133,6 @@ a:link {
   text-decoration: none;
   color: #ffffff;
 }
-
-/* a:hover {
-  color: #f06c64;
-} */
 
 .header-li + li ::before {
   content: '.';
@@ -320,10 +309,6 @@ button > span {
   cursor: pointer;
   outline: none;
 }
-li > button:hover {
-  color: #dedede;
-  border: 1px solid #c5c5c5;
-}
 
 .filter {
   display: flex;
@@ -364,9 +349,7 @@ li > button:hover {
 .team-member-contacts > li {
   list-style-type: none;
 }
-li > a > img:hover {
-  opacity: 70%;
-}
+
 .team-member-contacts > li + li {
   margin-left: 8px;
 }
@@ -557,10 +540,6 @@ input {
   border: 1px solid #f06c64;
 }
 
-.submit-button:hover {
-  opacity: 70%;
-  cursor: pointer;
-}
 .address-img {
   margin-left: 2px;
 }
@@ -568,18 +547,12 @@ span > a {
   text-decoration: none;
   color: #f0d8d9;
 }
-span > a:hover {
-  opacity: 75%;
-}
+
 .telephone-link {
   margin-left: -2px;
 }
 .mail-link {
   margin-left: -7px;
-}
-.footer-contacts img:hover {
-  opacity: 65%;
-  cursor: pointer;
 }
 
 /* stuff for DOM task */
@@ -724,6 +697,37 @@ span > a:hover {
 }
 
 /* responsive */
+@media (hover: hover) {
+  a:hover {
+    color: #f06c64;
+  }
+  .right-arrow:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+  .left-arrow:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+  li > button:hover {
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+  }
+  li > a > img:hover {
+    opacity: 70%;
+  }
+  .submit-button:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
+  span > a:hover {
+    opacity: 75%;
+  }
+  .footer-contacts img:hover {
+    opacity: 65%;
+    cursor: pointer;
+  }
+}
 
 @media (max-width: 1019px) {
   /* Header */
