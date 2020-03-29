@@ -697,6 +697,7 @@ span > a {
 }
 
 /* responsive */
+
 @media (hover: hover) {
   a:hover {
     color: #f06c64;
@@ -766,7 +767,8 @@ span > a {
   .horizontal {
     position: absolute;
     top: 133px;
-    left: 319px;
+    left: auto;
+    right: 105px;
     z-index: 1;
     width: 344px;
     height: 162px;
@@ -774,7 +776,8 @@ span > a {
   }
   .horizontal-display {
     position: absolute;
-    left: 364px;
+    left: auto;
+    right: 154px;
     top: 144px;
     z-index: 1;
     cursor: pointer;
@@ -783,7 +786,8 @@ span > a {
   }
   .horizontal-shadow {
     top: 134px;
-    left: 320px;
+    left: auto;
+    right: 85px;
     width: 364px;
     height: 181px;
   }
@@ -930,6 +934,7 @@ span > a {
 
 @media (max-width: 767px) {
   /* Header */
+
   header {
     height: 71px;
     justify-content: center;
@@ -970,6 +975,7 @@ span > a {
     scroll-margin-top: 71px;
   }
   .menu-button {
+    transition: transform 0.5s;
     display: block;
     width: 25px;
     height: 20px;
@@ -1004,7 +1010,6 @@ span > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 
     height: 100vh;
     width: 278px;
@@ -1020,7 +1025,7 @@ span > a {
   /* slider */
 
   .slider {
-    height: 221px;
+    height: 215px;
   }
   .vertical {
     position: absolute;
@@ -1052,7 +1057,8 @@ span > a {
   .horizontal {
     position: absolute;
     top: 65px;
-    left: 156px;
+    left: auto;
+    right: 51px;
     z-index: 1;
     width: 168px;
     height: 79px;
@@ -1060,7 +1066,8 @@ span > a {
   }
   .horizontal-display {
     position: absolute;
-    left: 178px;
+    left: auto;
+    right: 75px;
     top: 70px;
     z-index: 1;
     cursor: pointer;
@@ -1069,7 +1076,8 @@ span > a {
   }
   .horizontal-shadow {
     top: 65px;
-    left: 156px;
+    left: auto;
+    right: 41px;
     width: 178px;
     height: 88px;
   }
@@ -1093,9 +1101,11 @@ span > a {
   .grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 15px;
+    grid-gap: 30px;
 
     margin-top: 25px;
+    margin-left: 32px;
+    margin-bottom: 22px;
   }
   .services {
     height: auto;
@@ -1109,12 +1119,12 @@ span > a {
   }
 
   .p-service {
-    margin-left: 40px;
+    margin-left: 33px;
     color: #767e9e;
     font-family: 'Lato Light';
     font-size: 18px;
     line-height: 30px;
-    margin-top: 18px;
+    margin-top: 20px;
     /* letter-spacing: -0.012em; */
     text-align: left;
     /* max-width: 939px; */
@@ -1127,7 +1137,7 @@ span > a {
 
   .portfolio-section {
     height: auto;
-    padding: 42px 30px;
+    padding: 42px 30px 30px;
     margin-top: -2px;
     overflow: hidden;
   }
@@ -1141,7 +1151,8 @@ span > a {
     line-height: 36px;
   }
   .portfolio-description {
-    margin-top: 14px;
+    margin-top: 20px;
+    margin-bottom: 14px;
   }
   .portfolio-img {
     width: 100%;
@@ -1156,7 +1167,7 @@ span > a {
   .team-container {
     display: flex;
     flex-direction: column;
-    margin-top: 22px;
+    margin-top: 26px;
   }
   .team-member + .team-member {
     margin-left: 0;
@@ -1167,12 +1178,16 @@ span > a {
   .about-us-desctiption {
     margin-top: 14px;
     text-align: left;
+    letter-spacing: normal;
+  }
+  .team-member-description {
+    margin-top: 0px;
   }
   .about-us-section {
     height: auto;
 
     padding-top: 33px;
-    padding-bottom: 15px;
+    padding-bottom: 0;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -1188,6 +1203,9 @@ span > a {
   .team-member-img {
     width: 100%;
   }
+  .team-member-name {
+    margin-top: 15px;
+  }
 
   /* Get a quote */
 
@@ -1196,32 +1214,43 @@ span > a {
   }
 
   .get-a-quote-form {
-    /* display: flex;
-    flex-direction: column; */
     width: 100%;
     margin-top: 19px;
   }
   .get-a-quote-section {
-    /* max-width: 1020px; */
     height: auto;
-    /* margin: 0 auto; */
-    padding-top: 44px;
-    padding-bottom: 42px;
+
+    padding-top: 48px;
+    padding-bottom: 28px;
     padding-left: 30px;
     padding-right: 30px;
     height: auto;
   }
   .form-and-info-wrapper {
-    /* display: flex; */
     flex-direction: column;
   }
-  .submit-button {
-    width: 100%;
-  }
+
   .get-a-quote-contact-info {
     width: 100%;
     margin-left: 0;
     margin-top: 32px;
+  }
+  .get-a-quote-description {
+    color: #f0d8d9;
+    font-family: 'Lato Light';
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 17px;
+    word-spacing: normal;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .submit-button {
+    width: 100%;
+    height: 53px;
+  }
+  .get-a-quote-contact-info-contacts > li {
+    margin-bottom: 5px;
   }
 
   /* Footer */
