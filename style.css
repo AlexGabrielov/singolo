@@ -370,7 +370,7 @@ button > span {
   line-height: 21.56px;
   color: #767e9e;
   margin-top: 10px;
-  text-justify: justify;
+  text-align: justify;
 }
 .about-us-header {
   font-family: 'Lato Black';
@@ -803,9 +803,10 @@ span > a {
   .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 39px 53px;
+    /* grid-gap: 39px 53px; */
+    grid-gap: 54px 20px;
 
-    margin-top: 28px;
+    margin-top: 32px;
   }
   .services {
     margin: auto;
@@ -852,13 +853,16 @@ span > a {
   .portfolio-img {
     width: 100%;
   }
+  .portfolio-description {
+    letter-spacing: inherit;
+  }
 
   /* About Us */
 
   .team-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 42px;
+    margin-top: 32px;
   }
   .team-member + .team-member {
     margin-left: 0;
@@ -868,7 +872,8 @@ span > a {
     max-width: 1020px;
 
     padding-top: 65px;
-    padding-bottom: 69px;
+    padding-bottom: 66px;
+    height: auto;
   }
   .team-member {
     width: 32%;
@@ -877,20 +882,49 @@ span > a {
   .team-member-img {
     width: 100%;
   }
+  .team-member-name {
+    margin-top: 10px;
+  }
+  .team-member-description {
+    margin-top: 4px;
+  }
+  .team-member-contacts {
+    margin-top: 11px;
+  }
   /* Get a quote */
 
   .get-a-quote-form {
     width: 100%;
-    margin-top: 19px;
+    margin-top: 23px;
   }
   .get-a-quote-section {
     height: auto;
 
-    padding-top: 66px;
+    padding-top: 56px;
     padding-bottom: 42px;
     height: auto;
   }
-
+  .get-a-quote-header {
+    line-height: 36px;
+  }
+  .get-a-quote-description {
+    margin-top: 15px;
+  }
+  form > * + * {
+    margin-top: 10px;
+  }
+  .get-a-quote-contact-info {
+    width: 50%;
+    margin-left: 35px;
+    margin-top: 26px;
+  }
+  .get-a-quote-contact-info-description {
+    margin-top: 4px;
+  }
+  .get-a-quote-contact-info-contacts {
+    margin-top: 15px;
+    margin-left: 1px;
+  }
   /* Footer */
 }
 
